@@ -3,7 +3,6 @@ python:
 - '3.4'
 install: pip install tox codecov==2.0.5
 script: tox
-script: echo $TRAVIS_BUILD_NUMBER $TRAVIS_JOB_NUMBER
 deploy:
   provider: pypi
   user: sallyruthstruik
