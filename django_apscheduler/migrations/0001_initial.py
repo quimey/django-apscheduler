@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             name='DjangoJob',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=255, unique=True)),
+                ('name', models.CharField(max_length=190, unique=True)),
                 ('next_run_time', models.DateTimeField(db_index=True)),
                 ('job_state', models.BinaryField()),
             ],
